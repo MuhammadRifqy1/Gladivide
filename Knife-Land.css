@@ -1,0 +1,287 @@
+body{
+  font-family: Alata !important;
+}
+
+header{
+  height: 30rem;
+  background: darksalmon;
+}
+
+.head-img-container{
+  border-radius: 100% 0% 0% 100% / 51% 100% 0% 49%;
+  background: moccasin;
+}
+
+.head-img{
+  width: 20rem;
+  height: auto;
+}
+
+.headline h1 {
+  font-size: 2.5rem ;
+}
+
+.headline h2 {
+  font-size: 1.5rem ;
+  color: var(--bs-gray-700);
+}
+
+.heading-btn{
+  font-size: 1.3rem !important;
+  margin: 1rem;
+}
+
+.feature{
+  background: salmon;
+}
+
+.feature-grid{
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.feature-title , .faq-title , .buy-title{
+  font-size: 2.5rem;
+}
+
+.feature-frame{
+  width: 18rem;
+  height: auto;
+}
+
+.offer-img{
+  height: 15rem;
+}
+
+.offer-frame1{
+  border-radius: 59% 41% 33% 67% / 57% 32% 68% 43% ;
+  background: saddlebrown;
+}
+
+.offer-frame2{
+  border-radius: 69% 31% 68% 32% / 34% 39% 61% 66% ;
+  background: lightsalmon;
+}
+
+.offer-frame3{
+  border-radius: 20% 80% 62% 38% / 55% 29% 71% 45% ;
+  background: lightsteelblue;;
+}
+
+.offer{
+  font-size: 2rem
+}
+
+.faq{
+  background: coral;
+}
+
+.buy{
+  background: moccasin;
+}
+
+.product-list{
+  row-gap: 2rem;
+}
+
+.buy-img{
+  width: 16rem;
+  max-height: 18rem;
+}
+
+/* Bottom Part */
+
+#bottom-container {
+    background-color: darksalmon !important;
+    color: var(--bs-gray-800);
+    display: flex;
+    padding: 30px;
+    height: 300px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.bottom-text {
+    padding-left: 10px;
+}
+
+.address {
+    width: 30%;
+}
+
+.newsettler {
+    width: 30%;
+}
+
+.bottom-button {
+    color: var(--bs-gray-800) !important;
+    text-align: left !important;
+}
+
+.bottom-button:hover {
+    color: var(--bs-black) !important;
+}
+
+.knife-logo-container{
+  background: moccasin;
+  border-radius: 1rem;
+}
+
+.knife-logo{
+  width: 10rem;
+}
+
+.bottom-logo{
+    width: 1.5rem;
+}
+
+#bottom-title {
+    font-weight: bold !important;
+}
+
+#contact-title {
+    font-weight: bold !important;
+}
+
+.newsettler .input-group .btn {
+    z-index: 0;
+}
+
+@media (max-width: 991px) {
+
+  .headline h1 {
+    font-size: 1.75rem ;
+  }
+
+  .headline h2 {
+    font-size: 1.25rem ;
+  }
+
+  .head-img {
+    width: 17rem;
+  }
+
+  .feature-frame {
+    width: 14rem;
+  }
+
+  .offer-img{
+    height: 13rem;
+  }
+
+  .offer {
+    font-size: 1.75rem;
+  }
+
+  #bottom-container {
+      height: auto;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+  }
+
+  .bottom-text {
+      padding-left: 40px;
+  }
+
+  .address {
+      width: 90%;
+      padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .head-img {
+    width: 13rem;
+  }
+
+  .feature-title , .faq-title , .buy-title{
+    font-size: 2.25rem;
+  }
+
+  .feature-frame {
+    width: 10rem;
+  }
+
+  .offer-img {
+    height: 9rem;
+  }
+
+  .offer {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width: 660px) {
+
+    #bottom-container {
+        padding: 15px;
+    }
+
+    .address {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    h6 .bottom-list {
+        font-size: 15px;
+    }
+
+    .address {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    .bottom-text {
+        padding-left: 40px;
+    }
+
+    .newsettler {
+        padding-top: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+
+  header {
+    height: 16rem;
+  }
+
+  .head-img {
+    width: 8rem;
+  }
+
+  .heading-btn {
+    font-size: 1rem !important;
+  }
+
+  .headline h1 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .headline h2 {
+   font-size: 1rem;
+   text-align: center;
+  }
+
+  .feature-title , .faq-title , .buy-title{
+    font-size: 2rem;
+  }
+
+  .feature-frame {
+    width: 6.5rem;
+   }
+
+   .offer-img {
+     height: 6rem;
+   }
+
+   .offer {
+     font-size: 0.9rem;
+   }
+
+}
