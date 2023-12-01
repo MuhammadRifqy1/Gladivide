@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/knife-board-logo.webp" type="image/icon type">
     <script src="./Knife-Land.js?v=1.0"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css?v=1.0" rel="stylesheet defer"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -19,16 +20,16 @@
   </head>
 
   <body>
-    <header class="d-flex">
+    <header class="d-flex header">
 
-      <div class="headline d-flex flex-column align-items-center justify-content-center col-8 mt-5">
+      <div class="headline d-flex flex-column align-items-center justify-content-center col-8 mt-5 animate">
         <h1>Quality Knife At Your Place</h1>
         <h2 class="px-2 px-sm-0">See More About The Knife At Our Place</h2>
         <a href="#" data-scroll="#buyPart" class="btn btn-dark heading-btn">Order Now</a>
       </div>
 
       <div class="head-img-container d-flex align-items-center justify-content-center col-4">
-        <img class="head-img" src="./assets/knife-board.png" alt="Knife Header">
+        <img class="head-img fade-center-animation animate" src="./assets/knife-board.webp" id="headerImg" alt="Knife Header">
       </div>
 
     </header>
@@ -49,25 +50,25 @@
     <section class="py-4 feature">
       <h3 class="text-center feature-title pb-5">Our Offer</h3>
 
-      <div class="d-grid feature-grid">
+      <div class="d-grid feature-grid animate">
 
         <div class="offer-container">
           <div class="offer-frame1 p-lg-4 d-flex flex-column justify-content-center align-items-center feature-frame">
-            <img class="offer-img p-md-4 p-sm-3 p-2" src="./assets/knife-cutting.png" alt="Knife Cutting">
+            <img class="offer-img p-md-4 p-sm-3 p-2" src="./assets/knife-cutting.webp" id="KnifeCutting" alt="Knife Cutting">
           </div>
           <p class="offer d-flex justify-content-center mt-3">Sharp Knife</p>
         </div>
 
         <div class="offer-container">
           <div class="offer-frame2 p-lg-4 d-flex flex-column justify-content-center align-items-center feature-frame">
-            <img class="offer-img p-md-4 p-sm-3 p-2" src="./assets/knife-tag.png" alt="Knife Price">
+            <img class="offer-img p-md-4 p-sm-3 p-2" src="./assets/knife-tag.webp" id="KnifeTag" alt="Knife Price">
           </div>
           <p class="offer d-flex justify-content-center mt-3">Affordable Price</p>
         </div>
 
         <div class="offer-container">
           <div class="offer-frame3 p-lg-4 d-flex flex-column justify-content-center align-items-center feature-frame">
-            <img class="offer-img p-md-4 p-sm-3 p-2" src="./assets/knife-group.png" alt="Knife Group">
+            <img class="offer-img p-md-4 p-sm-3 p-2" src="./assets/knife-group.webp" id="KnifeGroup" alt="Knife Group">
           </div>
           <p class="offer d-flex justify-content-center mt-3">Many Variety</p>
         </div>
@@ -89,7 +90,7 @@
     <section class="faq pb-5">
       <h3 class="faq-title text-center">FAQ</h3>
 
-        <div class="d-grid question px-sm-5 px-2 pt-3 ms-sm-4 ms-0 pb-5" id="question">
+        <div class="d-grid question px-sm-5 px-2 pt-3 ms-sm-4 ms-0 pb-5 animate" id="question">
           <div class="accordion" id="accordionPanelsStayOpen">
             <div class="accordion-item">
               <h2 class="accordion-header" id="dummy-1-heading">
@@ -175,10 +176,10 @@
 
       <div class="d-flex flex-wrap product-list justify-content-evenly" id="buyPart">
 
-        <div class="card product">
+        <div class="card product animate">
           <h4 class="text-center pt-2">Small Pack</h4>
           <div class="buy-img-container">
-            <img class="buy-img py-2" src="./assets/small-box.png" alt="Small Pack">
+            <img class="buy-img py-2" src="./assets/small-box.webp" alt="Small Pack">
           </div>
           <div class="card-body">
           <h5 class="ps-3">Including :</h5>
@@ -195,10 +196,10 @@
           </div>
         </div>
 
-      <div class="card product">
+      <div class="card product animate">
         <h4 class="text-center pt-2">Medium Pack</h4>
         <div class="buy-img-container">
-          <img class="buy-img py-2" src="./assets/medium-box.png" alt="Medium Pack">
+          <img class="buy-img py-2" src="./assets/medium-box.webp" alt="Medium Pack">
         </div>
         <div class="card-body">
         <h5 class="ps-3">Including :</h5>
@@ -217,10 +218,10 @@
         </div>
       </div>
 
-    <div class="card product">
+    <div class="card product animate">
       <h4 class="text-center pt-2">Large Pack</h4>
       <div class="buy-img-container">
-        <img class="buy-img py-2" src="./assets/big-box.png" alt="Small Pack">
+        <img class="buy-img py-2" src="./assets/big-box.webp" alt="Small Pack">
       </div>
       <div class="card-body">
       <h5 class="ps-3">Including :</h5>
@@ -261,7 +262,7 @@
             <div id="bottom-container" class="bottom-container d-flex">
 
                 <div class="bottom-text address">
-                    <div class="knife-logo-container d-flex justify-content-center mb-2"><img class="knife-logo" src="./assets/knife-logo.png" alt="Knife Logo"></div>
+                    <div class="knife-logo-container d-flex justify-content-center mb-2"><img class="knife-logo" src="./assets/knife-logo.webp" alt="Knife Logo"></div>
                     <h6 id="bottom-ads">Quality Knife At Your Place - See More About The Knife At Our Place!</h6>
                     <h4 id="bottom-title" class="text-white">Address</h4>
                     <h5 id="bottom-list" class="fs-6"><i>

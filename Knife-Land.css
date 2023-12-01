@@ -3,7 +3,7 @@ body{
 }
 
 header{
-  height: 30rem;
+  height: 34rem;
   background: darksalmon;
 }
 
@@ -88,6 +88,54 @@ header{
 .buy-img{
   width: 16rem;
   max-height: 18rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .fade-left-animation{
+    animation: fadeInLeft 1s ease-in 0s 1 normal forwards;
+  }
+
+  .slide-left-animation{
+    animation: slideInLeft 1s ease 0s 1 normal forwards;
+  }
+
+  .fade-center-animation{
+    animation: fadeCenter 1s ease-in 0s 1 normal forwards;
+  }
+}
+
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes fadeCenter {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 /* Bottom Part */
